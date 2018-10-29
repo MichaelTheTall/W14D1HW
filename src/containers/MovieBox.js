@@ -5,7 +5,7 @@ class MovieBox extends Component {
   render() {
     return(
     <div className="movie-box">
-      HELLO I AM A MOVIEBOX
+      <MovieList />
     </div>
   );
   }
