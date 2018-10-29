@@ -35,12 +35,20 @@ class MovieBox extends Component {
     }
   }
 
+  viewmore() {
+    const url = 'https://www.imdb.com/calendar/?region=gb';
+    window.open(url, '_blank');
+  }
+
   render() {
     return(
     <div className="movie-box">
       <h1>Upcoming Film Releases for the UK:</h1>
       <MovieList data={this.state.data} />
-      <h2><a href="https://www.imdb.com/calendar/?region=gb">View more upcoming releases:</a></h2>
+      {/*
+        <h2><a href="https://www.imdb.com/calendar/?region=gb">View more upcoming releases:</a></h2>
+      */}
+      <button onClick={this.viewmore}>View more upcoming releases:</button>
     </div>
   );
   }
