@@ -5,7 +5,7 @@ class MovieList extends Component {
   render() {
     return(
     <div className="movie-list">
-    HELLO I AM A MOVIELIST
+    <Movie />
     </div>
   );
   }
