@@ -4,7 +4,9 @@ import MovieBox from './containers/MovieBox';
 class App extends Component {
   render() {
     return (
-    <MovieBox />
+      <div className="movie-box">
+        <MovieBox />
+      </div>
     );
   }
 }
